@@ -1,0 +1,151 @@
+
+/* 
+
+Description: 
+Author: Aixin Zhong, Inderpal Singh Brar, Nathálya Amorim Silva Menezes and Seunghyeon Yeom
+
+
+
+
+/*--------------------------------------------------------------
+Accessibility Starts
+--------------------------------------------------------------*/
+
+/* Text meant only for screen readers */
+.screen-reader-text {
+    clip-path: inset(1px 1px 1px 1px);
+    position: absolute !important;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+}
+
+.screen-reader-text:hover,
+.screen-reader-text:active,
+.screen-reader-text:focus {
+    background-color: #f1f1f1;
+    border-radius: 3px;
+    box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+    clip-path: auto !important;
+    color: #626262;
+    display: block;
+    font-size: 14px;
+    font-weight: bold;
+    height: auto;
+    left: 5px;
+    line-height: normal;
+    padding: 15px 23px 14px;
+    text-decoration: none;
+    top: 5px;
+    width: auto;
+    z-index: 100000;
+}
+
+/*--------------------------------------------------------------
+Accessibility Ends 
+--------------------------------------------------------------*/
+
+
+/*--------------------------------------------------------------
+Starts General Styles  
+--------------------------------------------------------------*/
+
+body {
+	margin: 0;
+	padding: 0;
+	color: #626262;
+	font-family: 'Sanchez', serif;
+	font-size: 16px;
+}
+
+h1, h2, h3, h4, p {
+	margin: 0;
+	padding: 0;
+    padding-top: 0.5em;
+    padding-bottom: 1em;
+}
+
+.hidden {
+    display: none;
+}
+
+/*--------------------------------------------------------------
+Ends General Styles  
+--------------------------------------------------------------*/
+
+
+/*--------------------------------------------------------------
+ Start Mobile Grid 
+--------------------------------------------------------------*/
+.head, .main > *, .foot {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.small-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-row-gap: 2em;
+}
+
+/*--------------------------------------------------------------
+ End Mobile Grid 
+--------------------------------------------------------------*/
+
+
+@supports (grid-area: auto) {
+
+/* ==============================================================
+	 Stars MOBILE
+	 ============================================================== */
+
+
+
+
+
+/* ==============================================================
+	 Ends MOBILE
+	 ============================================================== */
+
+
+
+
+
+/* ==============================================================
+	 Stars TABLET
+	 ============================================================== */
+
+@media screen and (min-width: 700px) and (max-width: 1023px) {
+
+
+
+
+}
+
+
+/* ==============================================================
+	 Ends TABLET 
+	 ============================================================== */
+
+
+
+
+
+
+/* ==============================================================
+	 Starts DESKTOP
+============================================================== */
+@media screen and (min-width: 1024px) {
+
+
+
+
+}
+
+/* ==============================================================
+	 Ends DESKTOP
+============================================================== */
+
+
+}
