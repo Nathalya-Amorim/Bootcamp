@@ -1,7 +1,6 @@
-
 /* 
 
-Description: 
+Description: Dashing Dimes Design Page
 Author: Aixin Zhong, Inderpal Singh Brar, Nathálya Amorim Silva Menezes and Seunghyeon Yeom
 
 
@@ -73,6 +72,20 @@ h1, h2, h3, h4, p {
   margin-left: 20px;
 }
 
+.mt-30px {
+  margin-top:30px;
+}
+
+
+
+.allignment{
+  text-align: center;
+}
+
+.centerSocial {
+  margin-left: 170px;
+  margin-bottom: 20px;
+}
 /*--------------------------------------------------------------
 Ends General Styles  
 --------------------------------------------------------------*/
@@ -129,7 +142,7 @@ Ends General Styles
   column-gap: 2em;
 }
 
-.four-items-flavours {
+.four-items {
   display: grid;
   grid-column: 1 / span 4;
   grid-template-columns: repeat(4, 1fr);
@@ -162,7 +175,7 @@ Ends General Styles
      #logo img {
         grid-column: 1/3;
         min-width: 25%;
-        width: 25%;
+        width: 50%;
         margin-top: 20px;
         margin-left: 20px;
      }
@@ -180,115 +193,116 @@ Ends General Styles
      .navbar-desktop {
         display: none;
        }
-     label .menu {
+
+      #overlay-button {
         position: absolute;
-        right: -100px;
-        top: -100px;
-        z-index: 100;
-        width: 200px;
-        height: 200px;
-        border-radius: 50% 50% 50% 50%;
-        -webkit-transition: .5s ease-in-out;
-        transition: .5s ease-in-out;
+        right: 1em;
+        padding: 26px 11px;
+        z-index: 5;
         cursor: pointer;
-        
+        user-select: none;
       }
-      
-      label .hamburger {
-        position: absolute;
-        top: 135px;
-        left: 50px;
-        width: 30px;
-        height: 2px;
-        background: #1C3176;
+
+      #overlay-button span {
+        height: 3px;
+        width: 25px;
+        border-radius: 2px;
+        background-color: #1C3176;
+        position: relative;
         display: block;
-        -webkit-transform-origin: center;
-        transform-origin: center;
-        -webkit-transition: .5s ease-in-out;
-        transition: .5s ease-in-out;
+        transition: all 0.2s ease-in-out;
       }
-      
-      label .hamburger:after, label .hamburger:before {
-        -webkit-transition: .5s ease-in-out;
-        transition: .5s ease-in-out;
+
+      #overlay-button span:before {
+        top: -7px;
+        visibility: visible;
+      }
+
+      #overlay-button span:after {
+        top: 7px;
+      }
+
+      #overlay-button span:before,
+      #overlay-button span:after {
+        height: 3px;
+        width: 25px;
+        border-radius: 2px;
+        background-color: #EFDD00;
+        position: absolute;
         content: "";
+        transition: all 0.2s ease-in-out;
+      }
+
+      #overlay-button:hover span,
+      #overlay-button:hover span:before,
+      #overlay-button:hover span:after {
+        background: #1C3176;
+      }
+
+      input[type=checkbox] {
+        display: none;
+      }
+
+      input[type=checkbox]:checked~#overlay {
+        visibility: visible;
+      }
+
+      input[type=checkbox]:checked~#overlay-button:hover span,
+      input[type=checkbox]:checked~#overlay-button span {
+        background: transparent;
+      }
+
+      input[type=checkbox]:checked~#overlay-button span:before {
+        transform: rotate(45deg) translate(5px, 5px);
+        opacity: 1;
+      }
+
+      input[type=checkbox]:checked~#overlay-button span:after {
+        transform: rotate(-45deg) translate(5px, -5px);
+      }
+
+      #overlay {
+        height: 100vh;
+        width: 100vw;
+        background:#1C3176;
+        z-index: 2;
+        visibility: hidden;
         position: absolute;
-        display: block;
-        width: 100%;
-        height: 100%;
-        background: #FCEE21;
-      }
-      
-      label .hamburger:before { top: -10px; }
-      
-      label .hamburger:after { bottom: -10px; }
-      
-      label input { display: none; }
-      
-      label input:checked + .menu {
-        box-shadow: 0 0 0 100vw #1C3176, 0 0 0 100vh #1C3176;
-        border-radius: 0;
-        
-      }
-      
-      label input:checked + .menu .hamburger {
-        -webkit-transform: rotate(45deg);
-        transform: rotate(45deg);
-        
-      }
-      
-      label input:checked + .menu .hamburger:after {
-        -webkit-transform: rotate(90deg);
-        transform: rotate(90deg);
-        bottom: 0;
-        
-      }
-      
-      label input:checked + .menu .hamburger:before {
-        -webkit-transform: rotate(90deg);
-        transform: rotate(90deg);
         top: 0;
-        
-      }
-      
-      label input:checked + .menu + ul { opacity: 1; }
-      
-      label ul {
-        z-index: 200;
-        position: absolute;
-        list-style: none;
-        top: 50%;
-        left: 50%;
-        -webkit-transform: translate(-50%, -50%);
-        transform: translate(-50%, -50%);
-        opacity: 0;
-        -webkit-transition: .25s 0s ease-in-out;
-        transition: .25s 0s ease-in-out;
-      }
-      
-      label a {
-        margin-bottom: 1em;
-        display: block;
-        color: #E5ECF7;
-        text-decoration: none ;
-        
+        left: 0;
+        /* This fixes scrolling issue */
+        overflow: hidden;
       }
 
-      label ul li a:hover {
-        color: #FCEE21;
+      /* #overlay.active {
+        visibility: visible;
+      } */
 
-      }
-
-    
-      h1 {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        -webkit-transform: translate(-50%, -50%);
-        transform: translate(-50%, -50%);
-        width: 80%;
+      #overlay ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
         text-align: center;
+        height: 100vh;
+        padding-left: 0;
+        list-style-type: none;
       }
+
+      #overlay ul li {
+        padding: .75em;
+      }
+
+      #overlay ul li a {
+        color: #E5ECF7;
+        text-decoration: none;
+        font-size: 1.25em;
+      }
+
+      #overlay ul li a:hover {
+        color: #EFDD00;
+      }
+
       /* Ends Mobile Overlay Menu */
 
 
@@ -305,10 +319,28 @@ Ends General Styles
 .service-box {
   margin-right: 20px;
   margin-bottom: 20px;
+
 }
+
+/* Starts MOBILE FOOTER */
+
+.box-color-lblue {
+  background-color:#E5ECF7;
+ }
+
+ .logo-footer {
+  width: 30%;
+  margin-left: 9em;
+
+
+ }
 
   }
 
+ 
+ 
+
+ /* Ends MOBILE FOOTER */
 
 
 
@@ -362,7 +394,7 @@ Ends General Styles
             display: grid;
             grid-template-columns: 1fr repeat(2, minmax(auto, 30em)) 1fr;
         }
-        
+
     .nav-grid {
         display: grid;
         grid-template-columns: repeat(7, 1fr);
@@ -427,7 +459,7 @@ Ends General Styles
             column-gap: 2em;
             padding-bottom: 3em;
             margin-bottom: 3em;
-
+        }
     /* Ends Desktop Grid */
     
     
