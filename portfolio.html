@@ -14,22 +14,24 @@
 <body>
 
     <h1 class="hidden">Dashing Dimes Design</h1>
-    <header class="nav-grid">
+    <header class="head nav-grid">
         <div id="logo">
             <img src="assets/logo.svg" alt="Dashing Dimes Design Logo">
         </div>
         <!-- Starts Mobile Nav -->
         <nav class="navbar-mobile">
-            <label>
-                <input type="checkbox">
-                <span class="menu"> <span class="hamburger"></span> </span>
-                <ul>
-                  <li> <a href="#">HOME</a> </li>
-                  <li> <a href="about.html">ABOUT</a> </li>
-                  <li> <a href="portfolio.html">PORTFOLIO</a> </li>
-                  <li> <a href="contact.html">CONTACT</a> </li>
-                </ul>
-                </label>
+            <div class="mobile">
+                <input type="checkbox" id="overlay-input"/>
+                <label for="overlay-input" id="overlay-button"><span></span></label>
+                <div id="overlay">
+                    <ul>
+                        <li> <a href="#">HOME</a> </li>
+                        <li> <a href="about.html">ABOUT</a> </li>
+                        <li> <a href="portfolio.html">PORTFOLIO</a> </li>
+                        <li> <a href="contact.html">CONTACT</a> </li>
+                    </ul>
+                </div>
+            </div>  
         </nav>
         <!-- Ends Mobile Nav -->
 
