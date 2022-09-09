@@ -15,22 +15,24 @@
 <body>
 
     <h1 class="hidden">Dashing Dimes Design</h1>
-    <header class="nav-grid">
+    <header class="head nav-grid">
         <div id="logo">
             <img src="assets/logo.svg" alt="Dashing Dimes Design Logo">
         </div>
         <!-- Starts Mobile Nav -->
         <nav class="navbar-mobile">
-            <label>
-                <input type="checkbox">
-                <span class="menu"> <span class="hamburger"></span> </span>
-                <ul>
-                  <li> <a href="#">HOME</a> </li>
-                  <li> <a href="about.html">ABOUT</a> </li>
-                  <li> <a href="portfolio.html">PORTFOLIO</a> </li>
-                  <li> <a href="contact.html">CONTACT</a> </li>
-                </ul>
-                </label>
+            <div class="mobile">
+                <input type="checkbox" id="overlay-input"/>
+                <label for="overlay-input" id="overlay-button"><span></span></label>
+                <div id="overlay">
+                    <ul>
+                        <li> <a href="#">HOME</a> </li>
+                        <li> <a href="about.html">ABOUT</a> </li>
+                        <li> <a href="portfolio.html">PORTFOLIO</a> </li>
+                        <li> <a href="contact.html">CONTACT</a> </li>
+                    </ul>
+                </div>
+            </div>  
         </nav>
         <!-- Ends Mobile Nav -->
 
@@ -53,24 +55,24 @@
             <h2>ABOUT US</h2>
         </div>
         <div class="one-item">
-            <h2>WE’RE Assisting  THE WORLD’S Growth</h2>
-            <h3>We are constantly tracking trends and being creative in order to provide advanced experience and growth in this industry.</h3>
+            <h2 class="ml-20px">WE’RE Assisting  THE WORLD’S Growth</h2>
+            <h3 class="ml-20px">We are constantly tracking trends and being creative in order to provide advanced experience and growth in this industry.</h3>
             <a> Who Are We?</a>
             <i class="fa-solid fa-circle-arrow-left"></i>
         </div>
 
         <div>
-            <h2>Our Service</h2>
+            <h2 class="ml-20px">Our Service</h2>
         </div>
-        <div class="one-item"> 
+        <section class="one-item"> 
             <div class="box-color service-box ml-20px">
                 <picture>
                     <source media="(min-width:740px)" srcset="#" >
                     <source media="(min-width:480px)" srcset="#">
                     <img src="#" alt="#">                    
                 </picture>
-                <h2>Seunghyon<br>Yeom</h2>
-                <h3>FOUNDER & DESIGNER</h3>
+                <h2 class="ml-20px">SETTING A GOAL<br> & RESEARCHING</h2>
+                <p class="ml-20px">We’re establishing a goal to <br>enhance your business and <br>researching the best ways to<br> advertise it. </p>
             </div>
             <div class="box-color service-box ml-20px">
                 <picture>
@@ -78,8 +80,8 @@
                     <source media="(min-width:480px)" srcset="#">
                     <img src="#" alt="#">                    
                 </picture>
-                <h2>Seunghyon<br>Yeom</h2>
-                <h3>FOUNDER & DESIGNER</h3>
+                <h2 class="ml-20px">MARKETING</h2>
+                <p class="ml-20px">We’ll be responsible for coming up<br> with a couple of the greatest <br>approaches. </p>
             </div>
             
             <div class="box-color service-box ml-20px">
@@ -88,8 +90,8 @@
                     <source media="(min-width:480px)" srcset="#">
                     <img src="#" alt="#">                    
                 </picture>
-                <h2>Seunghyon<br>Yeom</h2>
-                <h3>FOUNDER & DESIGNER</h3>
+                <h2 class="ml-20px">DESIGNING & BUILDING<br>A WEBSITE</h2>
+                <p class="ml-20px">We’re discussing about your<br> website and building a striking<br> business website for you. </p>
             </div>
 
             <div class="box-color service-box ml-20px">
@@ -98,15 +100,95 @@
                     <source media="(min-width:480px)" srcset="#">
                     <img src="#" alt="#">                    
                 </picture>
-                <h2>Seunghyon<br>Yeom</h2>
-                <h3>FOUNDER & DESIGNER</h3>
+                <h2 class="ml-20px">TESTING</h2>
+                <p  class="ml-20px">We'll advance all we've built<br> through testing</p>
+            </div>
+        </section>
+
+        <section class="one-item">
+            <h2>MEET OUT TEAM </h2>
+            <div class="box-color service-box ml-20px">
+                <picture>
+                    <source media="(min-width:740px)" srcset="#" >
+                    <source media="(min-width:480px)" srcset="#">
+                    <img src="#" alt="#">                    
+                </picture>
+                <h2 class="ml-20px">Seunghyon <br>Yeom </h2>
+                <h3  class="ml-20px">FOUNDER & DESIGNER</h3>
             </div>
 
+            <div class="box-color service-box ml-20px">
+                <picture>
+                    <source media="(min-width:740px)" srcset="#" >
+                    <source media="(min-width:480px)" srcset="#">
+                    <img src="#" alt="#">                    
+                </picture>
+                <h2 class="ml-20px">Nathalya <br>Menezes </h2>
+                <h3  class="ml-20px">DESIGNER</h3>
+            </div>
+
+            <div class="box-color service-box ml-20px">
+                <picture>
+                    <source media="(min-width:740px)" srcset="#" >
+                    <source media="(min-width:480px)" srcset="#">
+                    <img src="#" alt="#">                    
+                </picture>
+                <h2 class="ml-20px">Aixin <br>Zhong</h2>
+                <h3  class="ml-20px">VIDEO MAKER</h3>
+            </div>
+
+            <div class="box-color service-box ml-20px">
+                <picture>
+                    <source media="(min-width:740px)" srcset="#" >
+                    <source media="(min-width:480px)" srcset="#">
+                    <img src="#" alt="#">                    
+                </picture>
+                <h2 class="ml-20px">Inderpal <br>Singh Brar </h2>
+                <h3  class="ml-20px">DESIGNER &<br>DEVELOPER</h3>
+            </div>
+        </section>
+    </main>
+
+    <footer >
+    <div class="one-intem box-color-lblue">
+        <div>
+          <img class="logo-footer mt-30px" src="assets/logo.svg" alt="Logo">
+        </div>
+
+        <div class="two-items">
+            <div>
+                <h2>SUBSCRIBE</h2>
+                <form>
+                    <input id="e-mail" type="email" placeholder="Your e-mail">
+                    <input type="submit" value="SUBMIT">
+                </form>
+            </div>
+            <div>
+                <h2>CONTACT US</h2>
+                <p>EMail contact@dashingdime.com</p>
+                <p>Tel 1 1800 111 2222</p>
+                <p> Address 137 Dundas Street,<br>London, ON, CA</p>
+            </div>
+        </div>
+        <div class="one-item">
+            <div><h2 class="allignment">FOLLOW US</h2></div>
+        </div>
+        <div>
+            <i class=" centerSocial fa-brands fa-2xl fa-square-facebook"></i>
+            <i class="fa-brands fa-2xl fa-square-instagram"></i>
+            <i class="fa-brands fa-2xl fa-linkedin"></i>
+            <!-- social media icon -->
+        </div>
+        <div>
+            <p class="allignment">Privacy Policy &nbsp; &nbsp;FAQs</p>
+            <p class="allignment">@2022DashingDimes</p>
         </div>
     
+    </div>
 
+    
 
-    </main>
+    </footer>
    
 
 
