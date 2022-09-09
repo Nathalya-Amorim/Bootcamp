@@ -69,9 +69,14 @@ h1, h2, h3, h4, p {
     display: none;
 }
 
+.ml-20px {
+  margin-left: 20px;
+}
+
 /*--------------------------------------------------------------
 Ends General Styles  
 --------------------------------------------------------------*/
+
 
 
 /*--------------------------------------------------------------
@@ -82,13 +87,65 @@ Ends General Styles
     grid-template-columns: repeat(3, 1fr);
 }
 
-.small-grid {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
-    grid-row-gap: 2em;
+.one-item {
+  display: grid;
+  grid-column: 1 / span 2;
+  grid-template-columns: 1fr;
 }
 
+.four-items {
+  display: grid;
+  grid-column: 1 / span 2;
+  grid-template-columns: repeat(4, 1fr);
+  justify-content: space-evenly;
+  row-gap: 2em;
+  column-gap: 2em;
+}
+
+.two-items {
+  display: grid;
+  grid-column: 1 / span 2;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: space-evenly;
+  row-gap: 2em;
+  column-gap: 2em;
+}
+
+.three-items {
+  display: grid;
+  grid-column: 1 / span 2;
+  grid-template-columns: repeat(1, 1fr);
+  justify-content: space-evenly;
+  row-gap: 2em;
+  column-gap: 2em;
+}
+
+.four-items {
+  display: grid;
+  grid-column: 2 / span 2;
+  grid-template-columns: repeat(1, 1fr);
+  justify-content: space-evenly;
+  row-gap: 2em;
+  column-gap: 2em;
+}
+
+.four-items-flavours {
+  display: grid;
+  grid-column: 1 / span 4;
+  grid-template-columns: repeat(4, 1fr);
+  justify-content: space-evenly;
+  row-gap: 2em;
+  column-gap: 2em;
+}
+
+.six-items {
+  display: grid;
+  grid-column: 1 / span 2;
+  grid-template-columns: repeat(1, 1fr);
+  justify-content: space-evenly;
+  row-gap: 2em;
+  column-gap: 2em;  
+}
 /*--------------------------------------------------------------
  End Mobile Grid 
 --------------------------------------------------------------*/
@@ -235,9 +292,25 @@ Ends General Styles
       /* Ends Mobile Overlay Menu */
 
 
+/* ABOUT PAGE */
+.box-color {
 
+  background-color: #E5ECF7;
+  border-bottom-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border-top-left-radius:20px ;
+}
+
+
+.service-box {
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
 
   }
+
+
+
 
 /* ==============================================================
 	 Ends MOBILE
@@ -283,6 +356,13 @@ Ends General Styles
 
     /* Starts Desktop Grid */
 
+    .head,
+        .main>*,
+        .foot {
+            display: grid;
+            grid-template-columns: 1fr repeat(2, minmax(auto, 30em)) 1fr;
+        }
+        
     .nav-grid {
         display: grid;
         grid-template-columns: repeat(7, 1fr);
@@ -290,6 +370,63 @@ Ends General Styles
         grid-column-gap: 20px;
         grid-row-gap: 10px; 
      }
+
+     
+
+        .one-item {
+            display: grid;
+            grid-column: 2 / span 2;
+            grid-template-columns: 1fr;
+            justify-content: space-evenly;
+            row-gap: 2em;
+            column-gap: 2em;
+        }
+
+        .two-items {
+            display: grid;
+            grid-column: 2 / span 2;
+            grid-template-columns: repeat(2, 1fr);
+            justify-content: space-evenly;
+            row-gap: 2em;
+            column-gap: 2em;
+        }
+
+        .three-items {
+            display: grid;
+            grid-column: 2 / span 2;
+            grid-template-columns: repeat(3, 1fr);
+            justify-content: space-evenly;
+            row-gap: 2em;
+            column-gap: 2em;
+        }
+
+        .four-items-flavours {
+            display: grid;
+            grid-column: 1 / span 4;
+            grid-template-columns: repeat(4, 1fr);
+            justify-content: space-evenly;
+            row-gap: 2em;
+            column-gap: 2em;
+        }
+
+        .four-items {
+            display: grid;
+            grid-column: 1 / span 4;
+            grid-template-columns: repeat(4, 1fr);
+            justify-content: space-evenly;
+            row-gap: 2em;
+            column-gap: 2em;
+        }
+
+        .six-items {
+            display: grid;
+            grid-column: 2 / span 2;
+            grid-template-columns: repeat(3, 1fr);
+            justify-content: space-evenly;
+            row-gap: 2em;
+            column-gap: 2em;
+            padding-bottom: 3em;
+            margin-bottom: 3em;
 
     /* Ends Desktop Grid */
     
