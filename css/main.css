@@ -80,6 +80,10 @@ p{
  font-size:20px; 
 }
 
+main {
+	overflow: hidden;
+}
+
 .hidden {
     display: none;
 }
@@ -155,8 +159,6 @@ p{
   color:#1C3176
 }
 
-
-
 .allignment{
   text-align: center;
 }
@@ -164,6 +166,14 @@ p{
 .centerSocial {
   margin-left: 170px;
   margin-bottom: 20px;
+}
+
+.float-left {
+  float: left;
+}
+
+.float-right {
+  float: right;
 }
 
 /* +++++++++ */
@@ -187,12 +197,24 @@ p{
 .btn-play {
   border: solid 1px #000;
   border-radius: 40px;
-  width: 40px;
+  width: 35px;
+  height: 35px;
 }
 
 .btn-play.btn-shadow,
-.btn-blue.btn-shadow {
+.btn-blue.btn-shadow,
+.btn-close.btn-shadow {
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.btn-close {
+  border: 0px;
+  border-radius: 40px;
+  width: 40px;
+  height: 40px;
+  color: #fff;
+  background-color: #1C3176;;
+  cursor: pointer;
 }
 
 span.chip {
@@ -242,15 +264,6 @@ Ends General Styles
   grid-template-columns: 1fr;
 }
 
-.four-items {
-  display: grid;
-  grid-column: 1 / span 2;
-  grid-template-columns: repeat(4, 1fr);
-  justify-content: space-evenly;
-  row-gap: 2em;
-  column-gap: 2em;
-}
-
 .two-items {
   display: grid;
   grid-column: 1 / span 2;
@@ -273,15 +286,6 @@ Ends General Styles
   display: grid;
   grid-column: 2 / span 2;
   grid-template-columns: repeat(1, 1fr);
-  justify-content: space-evenly;
-  row-gap: 2em;
-  column-gap: 2em;
-}
-
-.four-items {
-  display: grid;
-  grid-column: 1 / span 4;
-  grid-template-columns: repeat(4, 1fr);
   justify-content: space-evenly;
   row-gap: 2em;
   column-gap: 2em;
@@ -430,7 +434,7 @@ Ends General Styles
       }
 
       #overlay ul li a {
-        color: #E5ECF7;
+        color: #BBD1F4;
         text-decoration: none;
         font-size: 1.25em;
       }
@@ -457,10 +461,9 @@ Ends General Styles
 }
 
 .box-color-services {
-  margin-left: 50px;
+  margin-left: 20px;
   height: 355px;
-  width:300px;
-  background-color: #E5ECF7;
+  background-color: #BBD1F4;
   border-bottom-left-radius: 20px;
   border-top-right-radius: 20px;
   border-top-left-radius:20px ;
@@ -469,27 +472,30 @@ Ends General Styles
 .box-color-team {
   margin-top: 110px;
   margin-left: 20px;
-  height:384px ;
-  width:353px;
-  background-color: #E5ECF7;
+  background-color: #BBD1F4;
   border-bottom-left-radius: 20px;
   border-top-right-radius: 20px;
   border-top-left-radius:20px ;
-
+  padding-bottom: 30px;
 }
 
 .box-color-blue {
-  margin-left: 30px;
-  height:330px ;
-  width:210px;
+  height: 300px;
+  width: 100%;
+  margin-bottom: 20px;
   background-color: #1C3176;
-  border-bottom-left-radius: 20px;
-  border-top-right-radius: 20px;
-  border-top-left-radius:20px ;
-
+  border-bottom-left-radius: 40px;
+  border-top-right-radius: 40px;
+  border-top-left-radius: 5px;
+  border-bottom-right-radius:40px ;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
-.pic-position-four {
+.box-color-blue p {
+  font-size: 1em;
+}
+
+/* .pic-position-four {
 
 }
 
@@ -510,18 +516,140 @@ Ends General Styles
   position: absolute;
   margin-left: 88px;
   margin-top: -101px;
+} */
+
+#profile-overlay-panel {
+  position: fixed;
+  display: none;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.5);
+  z-index: 200;
+  padding: 15px;
+}
+
+#close-profile-overlay {
+  position: fixed;
+  bottom: 5px;
+  right: 5px;
+  margin: 5px;
+}
+
+.teammate-profile-panel {
+  position: sticky;
+  overflow: auto;
+  top: 0;
+  display: none;
+  height: 100%;
+  width: 100%;
+  background-color: #FFF;
+}
+
+.teammate-profile-panel section{
+  padding: 15px;
+}
+
+.social-media-profile {
+  font-size: 1.5em;
+}
+
+.social-media-profile span {
+  cursor: pointer;
+  margin-right: 5px;
 }
 
 /* ============ Pop Up Pictures Profile========== */
 .profile_picTwo {
-  position:absolute;
-  margin-left:54px;
+  display: table;
+  margin-left: auto;
+  margin-right: auto;
   margin-top:-47px ;
 }
+
 .service-box {
   margin-right: 20px;
   margin-bottom: 20px;
+  padding-top: 30px;
+  transition: ease-in-out .3s;
 
+}
+
+.service-box:hover {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.team-box {
+  margin: 100px 20px 40px 20px;
+}
+
+.team-box picture {
+  border-radius: 100px;
+  cursor: pointer;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -80px ;
+  width: 50%;
+}
+
+.team-box img {
+  border-radius: 100px;
+  transition: ease-in-out .3s;
+}
+
+.team-box img:hover {
+  transform: scale(1.1);
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.service-box h2 {
+  font-size: 1.5em;
+  text-align: center;
+}
+
+.service-box p {
+  font-size: 1.0em;
+  text-align: center;
+}
+
+.service-box picture.service-picture{
+  background-color: #FFFFFF;
+  border-radius: 100px;
+  padding: 10px;
+  height: 65px;
+  width: 65px;
+  margin: auto;
+  margin-bottom: 30px;
+  display: block;
+}
+
+.service-box picture.service-picture img{
+  height: 80%;
+  width: 80%;
+  margin: auto;
+  margin-top: 10px;
+  display: block;
+}
+
+.service-box picture.team-picture{
+  height: 195px;
+}
+
+.service-box picture.team-picture img{
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -110px;
+  display: block;
+  border-radius: 100px;
+  transition: ease-in-out .3s;
+  cursor: pointer;
+}
+
+.service-box picture.team-picture img:hover {
+  transform: scale(1.1);
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 .one-item-profile p {
@@ -530,6 +658,11 @@ Ends General Styles
 
 #who-are-we {
   display: flex;
+}
+
+#who-are-we>div {
+  display: block;
+  margin: auto;
 }
 
 #who-are-we button {
@@ -543,7 +676,7 @@ Ends General Styles
 /* Starts MOBILE FOOTER */
 
 .box-color-lblue {
-  background-color:#E5ECF7;
+  background-color:#BBD1F4;
  }
 
  .logo-footer {
@@ -569,22 +702,49 @@ input[type=email]{
   font-size: 10px;
 }
 
+footer h2 {
+  font-size: 1.5em;
+  color: #1C3176;
+  margin: 30px 0 30px 0;
+  text-align: center;
+}
 
+.footer-logo {
+  padding-top: 20px;
+}
+
+.footer-social {
+  text-align: center;
+}
+
+.footer-social i{
+  text-align: center;
+  margin: 10px;
+  cursor: pointer;
+}
+
+.footer-contact h2, .footer-contact span{
+  text-align: center;
+}
+
+.footer-contact i {
+  margin: 10px;
+}
+
+.footer-map {
+  margin-bottom: 20px;
+}
+
+.footer-map span { 
+  text-align: center;
+}
+/* Ends MOBILE FOOTER */
  
 
-  }
-
-
- /* Ends MOBILE FOOTER */
-
-
-
+}
 /* ==============================================================
 	 Ends MOBILE
 	 ============================================================== */
-
-
-
 
 
 /* ==============================================================
@@ -621,80 +781,87 @@ input[type=email]{
 
 
 
-    /* Starts Desktop Grid */
+  /* Starts Desktop Grid */
 
-    .head,
-        .main>*,
-        .foot {
-            display: grid;
-            grid-template-columns: 1fr repeat(2, minmax(auto, 30em)) 1fr;
-        }
+  .head,
+  .main>*,
+  .foot {
+    display: grid;
+    grid-template-columns: 1fr repeat(2, minmax(auto, 30em)) 1fr;
+  }
 
-    .nav-grid {
-        display: grid;
-        grid-template-columns: repeat(7, 1fr);
-        grid-template-rows: 1fr;
-        grid-column-gap: 20px;
-        grid-row-gap: 10px; 
-     }
+  .nav-grid {
+      display: grid;
+      grid-template-columns: repeat(7, 1fr);
+      grid-template-rows: 1fr;
+      grid-column-gap: 20px;
+      grid-row-gap: 10px; 
+    }
 
-     
+  .one-item {
+      display: grid;
+      grid-column: 1 / span 2;
+      grid-template-columns: 1fr;
+      justify-content: space-evenly;
+      row-gap: 2em;
+      column-gap: 2em;
+  }
 
-        .one-item {
-            display: grid;
-            grid-column: 2 / span 2;
-            grid-template-columns: 1fr;
-            justify-content: space-evenly;
-            row-gap: 2em;
-            column-gap: 2em;
-        }
+  #team-section.one-item {
+    display: grid;
+    grid-column: 1 / span 1;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-evenly;
+    row-gap: 2em;
+    column-gap: 2em;
+  }
 
-        .two-items {
-            display: grid;
-            grid-column: 2 / span 2;
-            grid-template-columns: repeat(2, 1fr);
-            justify-content: space-evenly;
-            row-gap: 2em;
-            column-gap: 2em;
-        }
+  .two-items {
+      display: grid;
+      grid-column: 2 / span 2;
+      grid-template-columns: repeat(2, 1fr);
+      justify-content: space-evenly;
+      row-gap: 2em;
+      column-gap: 2em;
+  }
 
-        .three-items {
-            display: grid;
-            grid-column: 2 / span 2;
-            grid-template-columns: repeat(3, 1fr);
-            justify-content: space-evenly;
-            row-gap: 2em;
-            column-gap: 2em;
-        }
+  .three-items {
+      display: grid;
+      grid-column: 2 / span 2;
+      grid-template-columns: repeat(3, 1fr);
+      justify-content: space-evenly;
+      row-gap: 2em;
+      column-gap: 2em;
+  }
 
-        .four-items-flavours {
-            display: grid;
-            grid-column: 1 / span 4;
-            grid-template-columns: repeat(4, 1fr);
-            justify-content: space-evenly;
-            row-gap: 2em;
-            column-gap: 2em;
-        }
+  .four-items-flavours {
+      display: grid;
+      grid-column: 1 / span 4;
+      grid-template-columns: repeat(4, 1fr);
+      justify-content: space-evenly;
+      row-gap: 2em;
+      column-gap: 2em;
+  }
 
-        .four-items {
-            display: grid;
-            grid-column: 1 / span 4;
-            grid-template-columns: repeat(4, 1fr);
-            justify-content: space-evenly;
-            row-gap: 2em;
-            column-gap: 2em;
-        }
+  .four-items {
+      display: grid;
+      grid-column: 1 / span 4;
+      grid-template-columns: repeat(4, 1fr);
+      justify-content: space-evenly;
+      row-gap: 2em;
+      column-gap: 2em;
+  }
 
-        .six-items {
-            display: grid;
-            grid-column: 2 / span 2;
-            grid-template-columns: repeat(3, 1fr);
-            justify-content: space-evenly;
-            row-gap: 2em;
-            column-gap: 2em;
-            padding-bottom: 3em;
-            margin-bottom: 3em;
-        }
+  .six-items {
+      display: grid;
+      grid-column: 2 / span 2;
+      grid-template-columns: repeat(3, 1fr);
+      justify-content: space-evenly;
+      row-gap: 2em;
+      column-gap: 2em;
+      padding-bottom: 3em;
+      margin-bottom: 3em;
+  }
     /* Ends Desktop Grid */
     
     
@@ -721,7 +888,7 @@ input[type=email]{
 
  header {
     position:sticky;
-    box-shadow: 0px 5px 8px #E5ECF7; 
+    box-shadow: 0px 5px 8px #BBD1F4; 
 }
 
  .navbar-full {
@@ -773,6 +940,51 @@ nav ul li a:hover  {
    
 
 /*---------------- Ends Nav and Header Desktop ------------*/
+/*---------------- Start About Page desktop -----------------------*/
+.heroImage {
+  position: relative;
+  height: 420px;
+  width: 100%;
+  background-image: url(../img/about-top-pc.jpg);
+}
+
+.service-box picture.team-picture img{
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -150px;
+  display: block;
+}
+
+.service-box picture.team-picture img:hover{
+  border-radius: 155px;
+}
+
+/*---------------- End About Page desktop -----------------------*/
+/*---------------- Start desktop footer -----------------------*/
+footer #info.one-item {
+  display: grid;
+  /* grid-column: 1 / span 2; */
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: space-evenly;
+  row-gap: 2em;
+  column-gap: 2em;
+}
+
+footer .one-item {
+  grid-column: unset !important;
+}
+
+.footer-logo{
+  height: 100px;
+  text-align: center;
+}
+
+.footer-logo img{
+  height: 100px;
+}
+
+/*---------------- End desktop footer -----------------------*/
+
 .index-top {
   margin: 0 auto;
   align-items: center;
@@ -903,7 +1115,7 @@ nav ul li a:hover  {
 }
 
 .service_cards {
-  background-color: #E5ECF7;
+  background-color: #BBD1F4;
   border-top-left-radius: 40px;
   border-top-right-radius: 40px;
   border-bottom-left-radius: 40px;
