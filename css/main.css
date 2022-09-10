@@ -673,6 +673,58 @@ Ends General Styles
 
 /* ============ Pop Up Pictures Profile========== */
 
+
+/*======== Begin Contact Mobile ========*/
+
+#contact-form {
+  background-image: url("../img/contact_image-1920px.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  color: #1C3176;
+}
+
+#contact-form input[type=text],
+#contact-form textarea {
+  margin: auto;
+  margin-bottom: 1em;
+  padding: 1em;
+  border-radius: 3em;
+  border: 2px solid #fff;
+  width: 20em;
+  color: #BBD1F4;
+  transition: all ease-in .3s;
+  font-family: 'Tw Cen MT', sans-serif;
+  font-size: 1em;
+  text-align: center;
+}
+
+#phone {
+  margin: auto;
+  margin-bottom: 2em;
+  padding: 1em;
+  border-radius: 3em;
+  border: 2px solid #fff;
+  width: 20em;
+  color: #BBD1F4;
+  font-size: 1em;
+  text-align: center;
+
+}
+
+#contact-form input[type=text]:hover,
+#contact-form textarea:hover {
+  border-color: #1C3176;
+}
+
+.margin-mobile h3  {
+  margin-left: 100px;
+
+    
+}
+
+/*======== Ends Contact Mobile ========*/
+
 /* Starts MOBILE FOOTER */
 
 .box-color-lblue {
