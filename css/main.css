@@ -89,6 +89,10 @@ main {
 }
 /* ++++++++++++++  */
 
+.ma-10px {
+  margin: 10px;
+}
+
 .ml-20px {
   margin-left: 20px;
 }
@@ -115,13 +119,17 @@ main {
   margin-right: 20px;
 }
 
+.mt-10px {
+  margin-top: 10px;
+}
+
 .mt {
   margin-top: 30px;
 }
+
 .mt-45px {
   margin-top:45px;
 }
-
 
 .mt-70px {
   margin-top:70px;
@@ -133,6 +141,10 @@ main {
 
 .mb-20px {
   margin-bottom: 20px;
+}
+
+.mb-10px {
+  margin-bottom: 10px;
 }
 
 .mb-70px {
@@ -176,6 +188,13 @@ main {
   float: right;
 }
 
+.horizontal-align {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
 /* +++++++++ */
 
 /* ++++++++++++++++BUTTONS+++++++++++++++ */
@@ -194,6 +213,20 @@ main {
   cursor: pointer;
 }
 
+.btn-yellow {
+  display: block;
+  width: 120px;
+  background-color: #FCEE21;
+  padding: 10px;
+  text-align: center;
+  color: #000;
+  text-decoration: none;
+  border: none;
+  border-radius: 29px;
+  font-size: 12px;
+  cursor: pointer;
+}
+
 .btn-play {
   border: solid 1px #000;
   border-radius: 40px;
@@ -203,7 +236,8 @@ main {
 
 .btn-play.btn-shadow,
 .btn-blue.btn-shadow,
-.btn-close.btn-shadow {
+.btn-close.btn-shadow,
+.btn-yellow.btn-shadow {
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
@@ -495,30 +529,7 @@ Ends General Styles
   font-size: 1em;
 }
 
-/* .pic-position-four {
-
-}
-
-.pic-position-three {
-  position: absolute;
-  margin-left: 82px;
-  margin-top: -96px;
-
-}
-
-.pic-position-one {
-  position: absolute;
-  margin-left: 82px;
-  margin-top: -97px;
-}
-
-.pic-position-two {
-  position: absolute;
-  margin-left: 88px;
-  margin-top: -101px;
-} */
-
-#profile-overlay-panel {
+#profile-overlay-panel, #portfolio-overlay-panel {
   position: fixed;
   display: none;
   top: 0;
@@ -530,7 +541,7 @@ Ends General Styles
   padding: 15px;
 }
 
-#close-profile-overlay {
+#close-profile-overlay, #close-portfolio-overlay {
   position: fixed;
   bottom: 5px;
   right: 5px;
@@ -724,6 +735,54 @@ Ends General Styles
 }
 
 /*======== Ends Contact Mobile ========*/
+
+/*======== Starts Porfolio Mobile ========*/
+
+#portfolio-gallery {
+  display: grid;
+  padding: 15px;
+  row-gap: 15px;
+  background-color: #1C3176;
+}
+
+.portfolio-picture {
+  height: auto;
+  width: 100%;
+  cursor: pointer;
+}
+
+.portfolio-picture img {
+  max-width: 100%;
+  max-height: auto;
+}
+
+#portfolio-contact-card {
+  background-color: #FFF;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 10px;
+  border-radius: 30px;
+  text-align: center;
+}
+
+#portfolio-contact-card h3{
+  font-size: 1.5em;
+}
+
+.project-picture {
+  background-color: #1C3176;
+  padding: 20px;
+}
+
+.project-picture img {
+  max-width: 100%;
+}
+
+.project-info {
+  padding: 10px;
+}
+
+/*======== Ends Porfolio Mobile ========*/
 
 /* Starts MOBILE FOOTER */
 
@@ -1011,7 +1070,48 @@ nav ul li a:hover  {
   border-radius: 155px;
 }
 
+.teammate-profile-panel .box-color-blue{
+  height: 450px;
+}
+
 /*---------------- End About Page desktop -----------------------*/
+
+/*---------------- Start desktop portfolio page -----------------*/
+
+#portfolio-gallery {
+  display: grid;
+
+  padding: 15px;
+  row-gap: 15px;
+  background-color: #1C3176;
+}
+
+#portfolio-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+  background-color: #1C3176;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.portfolio-wrapper {
+  background-color: #1C3176;
+  padding: 20px;
+}
+  
+#project1 { grid-area: 1 / 1 / 2 / 2; }
+#project2 { grid-area: 1 / 2 / 3 / 3; }
+#project3 { grid-area: 1 / 3 / 2 / 4; }
+#project4 { grid-area: 2 / 1 / 4 / 2; }
+#project5 { grid-area: 3 / 2 / 4 / 3; }
+#project6 { grid-area: 2 / 3 / 4 / 4; }
+
+/*---------------- end desktop portfolio page -----------------*/
+
 /*---------------- Start desktop footer -----------------------*/
 footer #info.one-item {
   display: grid;
