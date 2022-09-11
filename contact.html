@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://kit.fontawesome.com/5cf9241734.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Indie+Flower&family=Permanent+Marker&family=Sarabun:ital,wght@0,100;0,200;0,300;0,400;0,500;0,800;1,100;1,200;1,300;1,400;1,800&display=swap" rel="stylesheet"> 
+    <link href="css/main.css" rel="stylesheet" type="text/css">
+    <title>Dashing Dimes Design</title>
+</head>
+<body>
+
+    <h1 class="hidden">Dashing Dimes Design</h1>
+    <header class="head nav-grid">
+        <div id="logo">
+            <a href="index.html">
+               <img src="assets/logo.svg" alt="Dashing Dimes Design Logo">
+            </a>
+         </div>
+        <!-- Starts Mobile Nav -->
+        <nav class="navbar-mobile">
+            <div class="mobile">
+                <input type="checkbox" id="overlay-input"/>
+                <label for="overlay-input" id="overlay-button"><span></span></label>
+                <div id="overlay">
+                    <ul>
+                        <li> <a href="index.html">HOME</a> </li>
+                        <li> <a href="about.html">ABOUT</a> </li>
+                        <li> <a href="portfolio.html">PORTFOLIO</a> </li>
+                        <li> <a href="contact.html">CONTACT</a> </li>
+                    </ul>
+                </div>
+            </div>  
+        </nav>
+        <!-- Ends Mobile Nav -->
+
+        <!-- Starts Desktop Nav -->
+
+        <nav class="navbar-full">
+                <ul>
+                  <li> <a href="index.html">HOME</a> </li>
+                  <li> <a href="about.html">ABOUT</a> </li>
+                  <li> <a href="portfolio.html">PORTFOLIO</a> </li>
+                  <li> <a href="contact.html">CONTACT</a> </li>
+                </ul>
+        </nav>
+         <!-- Ends Desktop Nav -->
+    </header>
+
+    <main>
+        <main>
+            <section id="contact-form" class="one-item center-text">
+                <h2 class="ml-20px mt-45px mr-20px mobile-font40px ">DON'T HESITATE TO CONTACT US</h2>
+                <p class="gray-color mb-70px mr-20px ml-20px mobile-font15px">THANK YOU FOR VISITING OUR WEBSITE! WE'LL GET BACK TO YOU WITHIN 2-3 BUSINESS DAYS.</p>
+                <div class="center-form-wrapper">
+                    <form action="#">
+                        <h3 class="mb-10px" >FULL NAME*</h3>
+                        <input type="text" id="name" name="name" placeholder="YOUR FIRST NAME"/>
+                        <input type="text" class ="mb-70px" id="last" name="name" placeholder="YOUR LAST NAME"/>
+                        <h3 class="mb-10px">PHONE*</h3>
+                        <input type="tel" id="phone" name="name" placeholder="PHONE NUMBER"/>
+                        <h3 class="mb-10px">EMAIL*</h3>
+                        <input type="text" id="email" name="email" placeholder="EXAMPLE@EXAMPLE.COM"/>
+                        <h3 class="mb-10px">SUBJECT*</h3>
+                        <input type="text" id="subject" name="subject" placeholder="WRITE THE SUBJECT"/>
+                        <h3 class="mb-10px">MESSAGE*</h3>
+                        <textarea id="message" name="message" cols="48" rows="10" placeholder="I am..."></textarea>
+                        <button type="submit" class="btn btn-success horizontal-align">
+                            <i class="fa-solid fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </section>
+        </main>
+
+    </main>
+   
+
+    <footer>
+        <div class="footer-logo one-item box-color-lblue">
+            <div>
+                <img class="logo-footer mt-30px" src="assets/logo.svg" alt="Logo">
+            </div>
+        </div>
+        <div id="info" class="one-item box-color-lblue">
+            <div class="footer-social one-item">
+                <div><h2 class="allignment">FOLLOW US</h2></div>
+                <div>
+                    <i class="fab fa-2xl fa-square-facebook"></i>
+                    <i class="fa-brands fa-2xl fa-square-instagram"></i>
+                    <i class="fa-brands fa-2xl fa-linkedin"></i>
+                </div>
+            </div>
+            <div class="footer-contact one-item">
+                <div class="one-item">
+                    <h2>CONTACT US</h2>
+                    <span><i class="fa-regular fa-envelope"></i>contact@dashingdime.com</span>
+                    <span><i class="fa-solid fa-phone"></i>+1 555-5555</span>
+                    <span><i class="fa-solid fa-location-pin"></i>Address 137 Dundas Street, London, ON, CA</span>
+                    <p</p>
+                </div>
+            </div>
+
+            <div class="footer-map one-item">
+                <div>
+                    <h2>Find us</h2>
+                </div>
+                <span>
+                    ADD MAP HERE
+                </span>
+            </div>
+        </div>
+        <div class="footer-rights one-item box-color-lblue">
+            <div>
+                <p class="allignment">Privacy Policy &nbsp; &nbsp;FAQs</p>
+                <p class="allignment">@2022DashingDimes</p>
+            </div>
+        </div>
+    </footer>
+   
+    
+    <script src="js/main.js"></script>
+</body>
+</html>

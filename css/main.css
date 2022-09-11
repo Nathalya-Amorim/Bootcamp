@@ -1,14 +1,14 @@
-
 /* 
-
 Description: 
 Author: Aixin Zhong, Inderpal Singh Brar, Nathálya Amorim Silva Menezes and Seunghyeon Yeom
+*/
 
 /*--------------------------------------------------------------
 Accessibility Starts
 --------------------------------------------------------------*/
 
 /* Text meant only for screen readers */
+
 .screen-reader-text {
   clip-path: inset(1px 1px 1px 1px);
   position: absolute !important;
@@ -20,22 +20,22 @@ Accessibility Starts
 .screen-reader-text:hover,
 .screen-reader-text:active,
 .screen-reader-text:focus {
-  background-color: #f1f1f1;
-  border-radius: 3px;
-  box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
-  clip-path: auto !important;
-  color: #626262;
-  display: block;
-  font-size: 14px;
-  font-weight: bold;
-  height: auto;
-  left: 5px;
-  line-height: normal;
-  padding: 15px 23px 14px;
-  text-decoration: none;
-  top: 5px;
-  width: auto;
-  z-index: 100000;
+    background-color: #f1f1f1;
+    border-radius: 3px;
+    box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+    clip-path: auto !important;
+    color: #626262;
+    display: block;
+    font-size: 14px;
+    font-weight: bold;
+    height: auto;
+    left: 5px;
+    line-height: normal;
+    padding: 15px 23px 14px;
+    text-decoration: none;
+    top: 5px;
+    width: auto;
+    z-index: 100000;
 }
 
 /*--------------------------------------------------------------
@@ -265,6 +265,7 @@ h1 {
   width: 80%;
   text-align: center;
 }
+
 /* Ends Mobile Overlay Menu */
 
 #logo img {
@@ -275,6 +276,453 @@ h1 {
   margin-left: 20px;
 }
 
+/* ==============================================================
+Ends MOBILE
+ ============================================================== */
+
+
+
+/* ==============================================================
+Stars TABLET
+ ============================================================== */
+
+@media screen and (min-width: 639px) and (max-width: 1023px) {
+
+ #logo img {
+  grid-column: 1/3;
+  width: 30%;
+  min-width: 15%;  
+  margin-top: 20px
+  margin-left: 20px;
+}
+
+.photo_pc, .photo_mb {
+  display: none;
+}
+
+.photo_tb {
+  display: block;
+  margin: 0 auto;
+}
+
+html {
+	margin: 0;
+	padding: 0;
+	color: #000;
+  font-family: 'Sarabun', sans-serif;
+  background-color: #FAFCFF;
+}	
+
+h1, h2, h3, h4, p {
+	margin: 0;
+	padding: 0;
+  padding-top: 0.5em;
+  /* padding-bottom: 1em; */
+}
+
+h1 {
+  font-size:70px ;
+}
+
+h2 {
+  font-size:50px;
+}
+
+h3 {
+  font: 25px;
+}
+
+p{
+ font-size:20px; 
+}
+
+main {
+	overflow: hidden;
+}
+
+.hidden {
+    display: none;
+}
+/* ++++++++++++++  */
+
+.ma-10px {
+  margin: 10px;
+}
+
+.ml-20px {
+  margin-left: 20px;
+}
+
+.ml-107px{
+  margin-left: 107px;
+}
+
+.ml-70px {
+  margin-left: 70px;
+}
+
+.ml-30px {
+  margin-left: 30px;
+}
+
+.ml-35px {
+  margin-left: 35px;
+}
+
+.mr-20px {
+  margin-right: 20px;
+}
+
+.mt-10px {
+  margin-top: 10px;
+}
+
+.mt {
+  margin-top: 30px;
+}
+
+.mt-45px {
+  margin-top:45px;
+}
+
+.mt-70px {
+  margin-top:70px;
+}
+
+.mt-100px {
+  margin-top: 100px;
+}
+
+.mb-20px {
+  margin-bottom: 20px;
+}
+
+.mb-10px {
+  margin-bottom: 10px;
+}
+
+.mb-70px {
+  margin-bottom: 70px;
+}
+
+.mobile-font40px{
+  font-size:40px ;
+}
+
+.mobile-font30px{
+  font-size:30px ;
+}
+
+.white-font {
+  color: #fff;
+}
+
+.gray-color {
+  color:#707070;
+}
+
+.blue-color {
+  color:#1C3176
+}
+
+.allignment{
+  text-align: center;
+}
+
+.centerSocial {
+  margin-left: 170px;
+  margin-bottom: 20px;
+}
+
+.float-left {
+  float: left;
+}
+
+.float-right {
+  float: right;
+}
+
+.horizontal-align {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+/* ++++++++++++++++BUTTONS+++++++++++++++ */
+
+.btn-blue {
+  display: block;
+  width: 120px;
+  background-color: #1C3176;
+  padding: 10px;
+  text-align: center;
+  color: #fff;
+  text-decoration: none;
+  border: none;
+  border-radius: 29px;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.btn-yellow {
+  display: block;
+  width: 120px;
+  background-color: #FCEE21;
+  padding: 10px;
+  text-align: center;
+  color: #000;
+  text-decoration: none;
+  border: none;
+  border-radius: 29px;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.btn-play {
+  border: solid 1px #000;
+  border-radius: 40px;
+  width: 35px;
+  height: 35px;
+}
+
+.btn-play.btn-shadow,
+.btn-blue.btn-shadow,
+.btn-close.btn-shadow,
+.btn-yellow.btn-shadow {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.btn-close {
+  border: 0px;
+  border-radius: 40px;
+  width: 40px;
+  height: 40px;
+  color: #fff;
+  background-color: #1C3176;;
+  cursor: pointer;
+}
+
+span.chip {
+
+  display: block;
+  width: 85px;
+  background-color: #FFFFFF;
+  padding: 5px;
+  text-align: center;
+  color: #1C3176;
+  text-decoration: none;
+  border: none;
+  border-radius: 29px;
+  font-size: 14 px;
+  font-weight: bold;
+  box-shadow: 0px 2px 8px #aaa; 
+}
+
+/* ++++++++++++++++BUTTONS+++++++++++++++ */
+
+/*--------------------------------------------------------------
+Ends General Styles  
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+ Start Mobile Grid 
+--------------------------------------------------------------*/
+.head, .main > *, .foot {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.one-item {
+  display: grid;
+  grid-column: 1 / span 2;
+  grid-template-columns: 1fr;
+}
+
+.one-item-profile {
+  display: grid;
+  grid-column: 1 / span 3;
+  grid-template-columns: 1fr;
+}
+
+.two-items {
+  display: grid;
+  grid-column: 1 / span 2;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: space-evenly;
+  row-gap: 2em;
+  column-gap: 2em;
+}
+
+.three-items {
+  display: grid;
+  grid-column: 1 / span 2;
+  grid-template-columns: repeat(1, 1fr);
+  justify-content: space-evenly;
+  row-gap: 2em;
+  column-gap: 2em;
+}
+
+.four-items {
+  display: grid;
+  grid-column: 2 / span 2;
+  grid-template-columns: repeat(1, 1fr);
+  justify-content: space-evenly;
+  row-gap: 2em;
+  column-gap: 2em;
+}
+
+.six-items {
+  display: grid;
+  grid-column: 1 / span 2;
+  grid-template-columns: repeat(1, 1fr);
+  justify-content: space-evenly;
+  row-gap: 2em;
+  column-gap: 2em;  
+}
+/*--------------------------------------------------------------
+ End Mobile Grid 
+--------------------------------------------------------------*/
+
+
+@supports (grid-area: auto) {
+
+/* ==============================================================
+	 Stars MOBILE 
+	 ============================================================== */
+
+#logo img {
+  grid-column: 1/3;
+  min-width: 25%;
+  width: 50%;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+/* Starts Mobile Overlay Menu */
+
+.navbar-desktop {
+ display: block;
+}
+
+.navbar-full {
+ display: none;
+}
+
+.navbar-desktop {
+ display: none;
+}
+
+#overlay-button {
+ position: absolute;
+ right: 1em;
+ padding: 26px 11px;
+ z-index: 5;
+ cursor: pointer;
+ user-select: none;
+}
+
+#overlay-button span {
+ height: 3px;
+ width: 25px;
+ border-radius: 2px;
+ background-color: #1C3176;
+ position: relative;
+ display: block;
+ transition: all 0.2s ease-in-out;
+}
+
+#overlay-button span:before {
+ top: -7px;
+ visibility: visible;
+}
+
+#overlay-button span:after {
+ top: 7px;
+}
+
+#overlay-button span:before,
+#overlay-button span:after {
+ height: 3px;
+ width: 25px;
+ border-radius: 2px;
+ background-color: #EFDD00;
+ position: absolute;
+        content: "";
+        transition: all 0.2s ease-in-out;
+      }
+
+      #overlay-button:hover span,
+      #overlay-button:hover span:before,
+      #overlay-button:hover span:after {
+        background: #1C3176;
+      }
+
+      input[type=checkbox] {
+        display: none;
+      }
+
+      input[type=checkbox]:checked~#overlay {
+        visibility: visible;
+      }
+
+      input[type=checkbox]:checked~#overlay-button:hover span,
+      input[type=checkbox]:checked~#overlay-button span {
+        background: transparent;
+      }
+
+      input[type=checkbox]:checked~#overlay-button span:before {
+        transform: rotate(45deg) translate(5px, 5px);
+        opacity: 1;
+      }
+
+      input[type=checkbox]:checked~#overlay-button span:after {
+        transform: rotate(-45deg) translate(5px, -5px);
+      }
+
+      #overlay {
+        height: 100vh;
+        width: 100vw;
+        background:#1C3176;
+        z-index: 2;
+        visibility: hidden;
+        position: absolute;
+        top: 0;
+        left: 0;
+        /* This fixes scrolling issue */
+        overflow: hidden;
+      }
+
+      /* #overlay.active {
+        visibility: visible;
+      } */
+
+      #overlay ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+        height: 100vh;
+        padding-left: 0;
+        list-style-type: none;
+      }
+
+      #overlay ul li {
+        padding: .75em;
+      }
+
+      #overlay ul li a {
+        color: #BBD1F4;
+        text-decoration: none;
+        font-size: 1.25em;
+      }
+
+      #overlay ul li a:hover {
+        color: #EFDD00;
+      }
+
+/* Ends Mobile Overlay Menu */
+      
 .html {
   background-color: #FAFCFF;
 }
@@ -656,15 +1104,412 @@ h1 {
 
 /* Ends Video Component */
 
+/* ABOUT PAGE */
+
+.heroImage {
+  position: relative;
+  height: 420px;
+  width: 390px;
+  background-image: url(../img/about-top-m.jpg);
+}
+
+.heroImage h2 {
+  margin-top: 160px;
+  margin-left: 85px;
+}
+
+.box-color-services {
+  margin-left: 20px;
+  height: 355px;
+  background-color: #BBD1F4;
+  border-bottom-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border-top-left-radius:20px ;
+}
+
+.box-color-team {
+  margin-top: 110px;
+  margin-left: 20px;
+  background-color: #BBD1F4;
+  border-bottom-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border-top-left-radius:20px ;
+  padding-bottom: 30px;
+}
+
+.box-color-blue {
+  height: 300px;
+  width: 100%;
+  margin-bottom: 20px;
+  background-color: #1C3176;
+  border-bottom-left-radius: 40px;
+  border-top-right-radius: 40px;
+  border-top-left-radius: 5px;
+  border-bottom-right-radius:40px ;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.box-color-blue p {
+  font-size: 1em;
+}
+
+#profile-overlay-panel, #portfolio-overlay-panel {
+  position: fixed;
+  display: none;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.5);
+  z-index: 200;
+  padding: 15px;
+}
+
+#close-profile-overlay, #close-portfolio-overlay {
+  position: fixed;
+  bottom: 5px;
+  right: 5px;
+  margin: 5px;
+}
+
+.teammate-profile-panel {
+  position: sticky;
+  overflow: auto;
+  top: 0;
+  display: none;
+  height: 100%;
+  width: 100%;
+  background-color: #FFF;
+}
+
+.teammate-profile-panel section{
+  padding: 15px;
+}
+
+.social-media-profile {
+  font-size: 1.5em;
+}
+
+.social-media-profile span {
+  cursor: pointer;
+  margin-right: 5px;
+}
+
+/* ============ Pop Up Pictures Profile========== */
+
+.profile_picTwo {
+  display: table;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top:-47px ;
+}
+
+.service-box {
+  margin-right: 20px;
+  margin-bottom: 20px;
+  padding-top: 30px;
+  transition: ease-in-out .3s;
+}
+
+.service-box:hover {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.team-box {
+  margin: 100px 20px 40px 20px;
+}
+
+.team-box picture {
+  border-radius: 100px;
+  cursor: pointer;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -80px ;
+  width: 50%;
+}
+
+.team-box img {
+  border-radius: 100px;
+  transition: ease-in-out .3s;
+}
+
+.team-box img:hover {
+  transform: scale(1.1);
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.service-box h2 {
+  font-size: 1.5em;
+  text-align: center;
+}
+
+.service-box p {
+  font-size: 1.0em;
+  text-align: center;
+}
+
+.service-box picture.service-picture{
+  background-color: #FFFFFF;
+  border-radius: 100px;
+  padding: 10px;
+  height: 65px;
+  width: 65px;
+  margin: auto;
+  margin-bottom: 30px;
+  display: block;
+}
+
+.service-box picture.service-picture img{
+  height: 80%;
+  width: 80%;
+  margin: auto;
+  margin-top: 10px;
+  display: block;
+}
+
+.service-box picture.team-picture{
+  height: 195px;
+}
+
+.service-box picture.team-picture img{
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -110px;
+  display: block;
+  border-radius: 100px;
+  transition: ease-in-out .3s;
+  cursor: pointer;
+}
+
+.service-box picture.team-picture img:hover {
+  transform: scale(1.1);
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.one-item-profile p {
+  line-height:25px ;
+}
+
+#who-are-we {
+  display: flex;
+}
+
+#who-are-we>div {
+  display: block;
+  margin: auto;
+}
+
+#who-are-we button {
+  margin-left: -30px;
+}
+
+/* ============ Pop Up Pictures Profile Ends ========== */
+
+/* Contact Page */
+
+#contact-form {
+  background-image: url("../img/contact_image-1920px.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  color: #1C3176;
+  margin: auto;
+}
+
+#contact-form input[type=text]:hover,
+#contact-form textarea:hover {
+  border-color: #1C3176;
+}
+
+.center-form-wrapper {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+.center-form-wrapper button {
+  color: #fff;
+  background-color: #1C3176;
+  height: 50px;
+  width: 80px;
+  border: 0;
+  border-radius: 20px;
+  margin-bottom: 20px;
+}
+
+#contact-form input[type=text],
+#contact-form textarea {
+  margin-bottom: 1em;
+  padding: 1em;
+  border-radius: 3em;
+  border: 2px solid #fff;
+  width: 90%;
+  color: #BBD1F4;
+  transition: all ease-in .3s;
+  font-family: 'Tw Cen MT', sans-serif;
+  font-size: 1em;
+  text-align: center;
+}
+
+#phone {
+  margin: auto;
+  margin-bottom: 2em;
+  padding: 1em;
+  border-radius: 3em;
+  border: 2px solid #fff;
+  width: 90%;
+  color: #BBD1F4;
+  font-size: 1em;
+  text-align: center;
+}
+
+.center-form-wrapper form {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*======== Ends Contact Mobile ========*/
+
+/*======== Starts Porfolio Mobile ========*/
+
+#portfolio-gallery {
+  display: grid;
+  padding: 15px;
+  row-gap: 15px;
+  background-color: #1C3176;
+}
+
+.portfolio-picture {
+  height: auto;
+  width: 100%;
+  cursor: pointer;
+}
+
+.portfolio-picture img {
+  max-width: 100%;
+  max-height: auto;
+}
+
+#portfolio-contact-card {
+  background-color: #FFF;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 10px;
+  border-radius: 30px;
+  text-align: center;
+}
+
+#portfolio-contact-card h3{
+  font-size: 1.5em;
+}
+
+.project-picture {
+  background-color: #1C3176;
+  padding: 20px;
+}
+
+.project-picture img {
+  max-width: 100%;
+}
+
+.project-info {
+  padding: 10px;
+}
+
+/*======== Ends Porfolio Mobile ========*/
+
+/* Starts MOBILE FOOTER */
+
+.box-color-lblue {
+  background-color:#BBD1F4;
+ }
+
+ .logo-footer {
+  width: 30%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+ }
+
+input,
+textarea {
+    display: block;
+    margin: 0;
+    padding: 0;
+    border-radius: 20px;
+    box-shadow: 0px 2px 8px #aaa; 
+}
+
+input[type=email]{
+  height: 2.5em;
+  border: none;
+  padding-left: 20px;
+  padding-top: 3px;
+  color: #aaa;
+  font-size: 10px;
+}
+
+footer h2 {
+  font-size: 1.5em;
+  color: #1C3176;
+  margin: 30px 0 30px 0;
+  text-align: center;
+}
+
+.footer-logo {
+  padding-top: 20px;
+}
+
+.footer-social {
+  text-align: center;
+}
+
+.footer-social i{
+  text-align: center;
+  margin: 10px;
+  cursor: pointer;
+}
+
+.footer-contact h2, .footer-contact span{
+  text-align: center;
+}
+
+.footer-contact i {
+  margin: 10px;
+}
+
+.footer-map {
+  margin-bottom: 20px;
+}
+
+.footer-map span { 
+  text-align: center;
+}
+/* Ends MOBILE FOOTER */
+ 
 /* ==============================================================
-Ends MOBILE
- ============================================================== */
-
+	 Ends MOBILE
+	 ============================================================== */
 
 
 /* ==============================================================
-Stars TABLET
- ============================================================== */
+	 Starts TABLET
+	 ============================================================== */
+
+@media screen and (min-width: 639px) and (max-width: 1023px) {
+
+  #logo img {
+    grid-column: 1/3;
+    width: 30%;
+    min-width: 15%;
+    margin-top: 20px;
+    margin-left: 20px;
+  }
+
+/*---------------Starts index tablet----------------*/
 
 @media screen and (min-width: 639px) and (max-width: 1023px) {
 
@@ -1087,18 +1932,108 @@ Stars TABLET
   }
 }
 
-/* ==============================================================
-Ends TABLET 
- ============================================================== */
 
+/*------------------ends index tablet------------------------*/
 
+/*------------------- Starts Tablet About Page --------------*/
 
+  .heroImage {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background-image: url(../img/about-top-t.jpg);
+  }
 
+  .four-items {
+    display: grid;
+    grid-column: 1 / span 4;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: space-evenly;
+    row-gap: 2em;
+    column-gap: 0.1em;
+  }
+
+  .service-box h2 {
+    font-size: 1.0em;
+  }
+
+  .service-box p {
+    font-size: 0.8em;
+  }
+
+  .box-color-services {
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-bottom: 20px;
+    height: auto;
+  }
+
+  #team-section.one-item {
+      display: grid;
+      grid-column: 1 / span 2;
+      grid-template-columns: repeat(2, 1fr);
+      justify-content: space-evenly;
+      row-gap: 2em;
+      column-gap: 2em;
+  }
+
+/*------------------- Ends Tablet About Page --------------*/
+
+/*------------------- Starts Tablet About Page --------------*/
+  #portfolio-gallery {
+    display: grid;
+
+    padding: 15px;
+    row-gap: 15px;
+    background-color: #1C3176;
+  }
+
+  #portfolio-gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    background-color: #1C3176;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+  }
+
+  .portfolio-wrapper {
+    background-color: #1C3176;
+    padding: 20px;
+  }
+    
+  #project1 { grid-area: 1 / 1 / 2 / 2; }
+  #project2 { grid-area: 1 / 2 / 3 / 3; }
+  #project3 { grid-area: 1 / 3 / 2 / 4; }
+  #project4 { grid-area: 2 / 1 / 4 / 2; }
+  #project5 { grid-area: 3 / 2 / 4 / 3; }
+  #project6 { grid-area: 2 / 3 / 4 / 4; }
+
+/*------------------- Ends Tablet About Page --------------*/  
+
+/*------------------- Starts Tablet Footer -----------------*/
+  .footer-logo{
+    height: 100px;
+    text-align: center;
+  }
+
+  .footer-logo img{
+    height: 100px;
+    /* margin-left: unset; */
+  }
+
+/*------------------- Ends Tablet Footer -----------------*/
+
+}
 
 
 /* ==============================================================
 Starts DESKTOP
 ============================================================== */
+
 @media screen and (min-width: 1024px) {
 
 /* Starts Desktop Grid */
@@ -1178,6 +2113,150 @@ nav ul li a:hover  {
 
 }
 
+/*---------------- Ends Nav and Header Desktop ------------*/
+
+  /* Starts Desktop Grid */
+
+  .head,
+  .main>*,
+  .foot {
+    display: grid;
+    grid-template-columns: 1fr repeat(2, minmax(auto, 30em)) 1fr;
+  }
+
+  .nav-grid {
+      display: grid;
+      grid-template-columns: repeat(7, 1fr);
+      grid-template-rows: 1fr;
+      grid-column-gap: 20px;
+      grid-row-gap: 10px; 
+    }
+
+  .one-item {
+      display: grid;
+      grid-column: 1 / span 2;
+      grid-template-columns: 1fr;
+      justify-content: space-evenly;
+      row-gap: 2em;
+      column-gap: 2em;
+  }
+
+  #team-section.one-item {
+    display: grid;
+    grid-column: 1 / span 1;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-evenly;
+    row-gap: 2em;
+    column-gap: 2em;
+  }
+
+  .two-items {
+      display: grid;
+      grid-column: 2 / span 2;
+      grid-template-columns: repeat(2, 1fr);
+      justify-content: space-evenly;
+      row-gap: 2em;
+      column-gap: 2em;
+  }
+
+  .three-items {
+      display: grid;
+      grid-column: 2 / span 2;
+      grid-template-columns: repeat(3, 1fr);
+      justify-content: space-evenly;
+      row-gap: 2em;
+      column-gap: 2em;
+  }
+
+  .four-items-flavours {
+      display: grid;
+      grid-column: 1 / span 4;
+      grid-template-columns: repeat(4, 1fr);
+      justify-content: space-evenly;
+      row-gap: 2em;
+      column-gap: 2em;
+  }
+
+  .four-items {
+      display: grid;
+      grid-column: 1 / span 4;
+      grid-template-columns: repeat(4, 1fr);
+      justify-content: space-evenly;
+      row-gap: 2em;
+      column-gap: 2em;
+  }
+
+  .six-items {
+      display: grid;
+      grid-column: 2 / span 2;
+      grid-template-columns: repeat(3, 1fr);
+      justify-content: space-evenly;
+      row-gap: 2em;
+      column-gap: 2em;
+      padding-bottom: 3em;
+      margin-bottom: 3em;
+  }
+    /* Ends Desktop Grid */
+    
+   /*---------------- Starts Nav and Header Desktop ------------*/
+   
+   .navbar-mobile {
+    display: none;
+ }
+
+ #logo img {
+
+    grid-column: 1/3;
+    width: 60%;
+    min-width: 60%;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+ }
+
+ header {
+    position:sticky;
+    box-shadow: 0px 5px 8px #BBD1F4; 
+}
+
+ .navbar-full {
+    display: inline;
+    grid-column: 3/10;
+    margin-top: 60px;
+ }
+
+nav ul {
+    margin: 0;
+    padding: 0em 0em .95em;
+    text-align: end;
+    color: #000;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0em 0em .95em;
+    text-align: end;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 150px;
+    
+}
+
+nav ul li a {
+    color: #000;
+    font-size: inherit;
+    text-decoration: none;
+}
+
+nav ul li a:hover  {
+    padding-bottom: .5em;
+    color: #1C3176;
+    border-bottom: 3px solid #1C3176;
+    transition: background-color 500ms linear;
+
+   }
 /*---------------- Ends Nav and Header Desktop ------------*/
 
 /* Index Page Starts */
@@ -1585,9 +2664,129 @@ margin-top: 100px;
 
 /* Index Page Ends */
 
-/* ==============================================================
-Ends DESKTOP
+
+/*---------------- Start About Page desktop -----------------------*/
+.heroImage {
+  position: relative;
+  height: 420px;
+  width: 100%;
+  background-image: url(../img/about-top-pc.jpg);
+}
+
+.service-box picture.team-picture img{
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -150px;
+  display: block;
+}
+
+.service-box picture.team-picture img:hover{
+  border-radius: 155px;
+}
+
+.teammate-profile-panel .box-color-blue{
+  height: 450px;
+}
+
+/*---------------- End About Page desktop -----------------------*/
+
+/*---------------- Start desktop portfolio page -----------------*/
+
+#portfolio-gallery {
+  display: grid;
+
+  padding: 15px;
+  row-gap: 15px;
+  background-color: #1C3176;
+}
+
+#portfolio-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+  background-color: #1C3176;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.portfolio-wrapper {
+  background-color: #1C3176;
+  padding: 20px;
+}
+  
+#project1 { grid-area: 1 / 1 / 2 / 2; }
+#project2 { grid-area: 1 / 2 / 3 / 3; }
+#project3 { grid-area: 1 / 3 / 2 / 4; }
+#project4 { grid-area: 2 / 1 / 4 / 2; }
+#project5 { grid-area: 3 / 2 / 4 / 3; }
+#project6 { grid-area: 2 / 3 / 4 / 4; }
+
+/*---------------- end desktop portfolio page -----------------*/
+
+/*---------------- Starts contact desktop page -----------------*/
+
+#contact-form input[type=text],
+#contact-form textarea {
+  margin-bottom: 1em;
+  padding: 1em;
+  border-radius: 3em;
+  border: 2px solid #fff;
+  width: 100%;
+  color: #BBD1F4;
+  transition: all ease-in .3s;
+  font-family: 'Tw Cen MT', sans-serif;
+  font-size: 1em;
+  text-align: center;
+}
+
+#phone {
+  margin: auto;
+  margin-bottom: 2em;
+  padding: 1em;
+  border-radius: 3em;
+  border: 2px solid #fff;
+  width: 100%;
+  color: #BBD1F4;
+  font-size: 1em;
+  text-align: center;
+}
+
+.center-form-wrapper form {
+  width: 40%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*---------------- Ends contact desktop page -----------------*/
+
+/*---------------- Start desktop footer -----------------------*/
+footer #info.one-item {
+  display: grid;
+  /* grid-column: 1 / span 2; */
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: space-evenly;
+  row-gap: 2em;
+  column-gap: 2em;
+}
+
+footer .one-item {
+  grid-column: unset !important;
+}
+
+.footer-logo{
+  height: 100px;
+  text-align: center;
+}
+
+.footer-logo img{
+  height: 100px;
+}
+
+/*---------------- End desktop footer -----------------------*/
+
+/* ================== Ends DESKTOP ===========================
 ============================================================== */
-
-
 }
