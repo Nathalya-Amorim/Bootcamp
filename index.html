@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://kit.fontawesome.com/5cf9241734.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Indie+Flower&family=Permanent+Marker&family=Sarabun:ital,wght@0,100;0,200;0,300;0,400;0,500;0,800;1,100;1,200;1,300;1,400;1,800&display=swap" rel="stylesheet">
 
     <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
@@ -35,7 +36,7 @@
                 <label for="overlay-input" id="overlay-button"><span></span></label>
                 <div id="overlay">
                     <ul>
-                        <li> <a href="#">HOME</a> </li>
+                        <li> <a href="index.html">HOME</a> </li>
                         <li> <a href="about.html">ABOUT</a> </li>
                         <li> <a href="portfolio.html">PORTFOLIO</a> </li>
                         <li> <a href="contact.html">CONTACT</a> </li>
@@ -49,7 +50,7 @@
 
         <nav class="navbar-full">
                 <ul>
-                  <li> <a href="#">HOME</a> </li>
+                  <li> <a href="index.html">HOME</a> </li>
                   <li> <a href="about.html">ABOUT</a> </li>
                   <li> <a href="portfolio.html">PORTFOLIO</a> </li>
                   <li> <a href="contact.html">CONTACT</a> </li>
@@ -65,11 +66,8 @@
             <picture>
                 <source media="(min-width:740px)" srcset="img/index-top-pc.jpg" >
                 <source media="(min-width:480px)" srcset="img/index-top-t.jpg">
-                <img src="img/index-top-m.jpg" alt="#">                    
+                <img class="" src="img/index-top-m.jpg" alt="#">                    
             </picture>
-            <!-- <img class="photo_pc" src="./img/index-top-pc.jpg" alt="index_page_top_banner_image">
-            <img class="photo_tb" src="./img/index-top-t.jpg" alt="index_page_top_banner_image">
-            <img class="photo_mb" src="./img/index-top-m.jpg" alt="index_page_top_banner_image"> -->
 
             <div class="greeting_index">
                 <h3 class="text_welcome">WELCOME TO DASHING DIMES DESIGN</h3>
@@ -79,7 +77,7 @@
             <div class="buttons_pc buttons_index_top">
                 <a class="btn_get-in-touch" href="./contact.html"><button>Get In Touch</button></a>
 
-                <a href="" class="btn_watch-video-box">
+                <a href="./component_video.html" class="btn_watch-video-box">
                     <button class="btn_watch-video">Watch Video</button>
                     <i class="ri-arrow-right-circle-fill"></i>
                 </a>
@@ -222,7 +220,47 @@
             </div>
         </div>
     </div>
+    <footer>
+        <div class="footer-logo one-item box-color-lblue">
+            <div>
+                <img class="logo-footer mt-30px" src="assets/logo.svg" alt="Logo">
+            </div>
+        </div>
+        <div id="info" class="one-item box-color-lblue">
+            <div class="footer-social one-item">
+                <div><h2 class="allignment">FOLLOW US</h2></div>
+                <div>
+                    <i class="fab fa-2xl fa-square-facebook"></i>
+                    <i class="fa-brands fa-2xl fa-square-instagram"></i>
+                    <i class="fa-brands fa-2xl fa-linkedin"></i>
+                </div>
+            </div>
+            <div class="footer-contact one-item">
+                <div class="one-item">
+                    <h2>CONTACT US</h2>
+                    <span><i class="fa-regular fa-envelope"></i>contact@dashingdime.com</span>
+                    <span><i class="fa-solid fa-phone"></i>+1 555-5555</span>
+                    <span><i class="fa-solid fa-location-pin"></i>Address 137 Dundas Street, London, ON, CA</span>
+                    <p</p>
+                </div>
+            </div>
 
+            <div class="footer-map one-item">
+                <div>
+                    <h2>Find us</h2>
+                </div>
+                <span>
+                    ADD MAP HERE
+                </span>
+            </div>
+        </div>
+        <div class="footer-rights one-item box-color-lblue">
+            <div>
+                <p class="allignment">Privacy Policy &nbsp; &nbsp;FAQs</p>
+                <p class="allignment">@2022DashingDimes</p>
+            </div>
+        </div>
+    </footer>
     <script src="js/main.js"></script>
 </body>
 </html>

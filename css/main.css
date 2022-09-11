@@ -708,6 +708,16 @@ Ends General Styles
   display: block;
 }
 
+.center-form-wrapper button {
+  color: #fff;
+  background-color: #1C3176;
+  height: 50px;
+  width: 80px;
+  border: 0;
+  border-radius: 20px;
+  margin-bottom: 20px;
+}
+
 #contact-form input[type=text],
 #contact-form textarea {
   margin-bottom: 1em;
