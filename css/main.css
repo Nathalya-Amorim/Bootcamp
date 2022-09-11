@@ -194,7 +194,7 @@ Starts MOBILE
         display: block;
         width: 100%;
         height: 100%;
-        background: #FCEE21;
+        background: #FFD800;
       }
       
       label .hamburger:before { top: -10px; }
@@ -253,7 +253,7 @@ Starts MOBILE
       }
 
       label ul li a:hover {
-        color: #FCEE21;
+        color: #FFD800;
 
       }
 
@@ -399,16 +399,26 @@ nav ul li a:hover  {
 }
 
 .index-top {
+  display: grid;
+  place-content: center;
   margin: 0 auto;
   align-items: center;
   position: relative;
 }
 
-.greeting_index {
-  top: 30%;
-  left: 18%;
-  text-align: center;
+.starting-homepage {
+  width: 1350px;
   position: absolute;
+  top: 31%;
+  left: 5%;
+  bottom: 20%;
+  margin: 0 auto;
+}
+
+.greeting_index {
+  display: grid;
+  place-content: center;
+  text-align: center;
 }
 
 .greeting_index h3 {
@@ -428,7 +438,7 @@ nav ul li a:hover  {
 
 .greeting_index h4 span {
   font-weight: 900;
-  color: #FCEE21;
+  color: #FFD800;
 }
 
 .buttons_pc a button {
@@ -440,18 +450,29 @@ nav ul li a:hover  {
   filter: drop-shadow(2px 3px 4px #00000050);
 }
 
+.buttons_index_top {
+  color: black;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 90px;
+}
+
 .buttons_index_top a button {
   background-color: white;
   color: black;
   text-align: center;
-  position: absolute;
-  top: 95%;
-  left: 36%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 
 .btn_get-in-touch button {
   width: 160px;
-  margin-right: 190px;
+  margin-right: 10px;
 }
 
 .btn_get-in-touch button:hover {
@@ -461,23 +482,25 @@ nav ul li a:hover  {
 }
 
 .btn_watch-video-box {
-  display: block;
+  display: flex;
+  flex-direction: row;
 }
 
-.btn_watch-video-box .btn_watch-video {
+.btn_watch-video {
   width: 190px;
-  text-align: center;
-  padding-right: 45px;
-  margin-left: 190px;
+  padding-right: 40px;
+  margin-left: 10px;
+  margin-top: 10px;
   cursor: auto;
 }
 
 .ri-arrow-right-circle-fill {
+  margin-left: -50px;
   font-size: 75px;
-  color: #FCEE21;
-  position: absolute;
-  top: 93.5%;
-  left: 865px;
+  color: #FFD800;
+  /* position: absolute; */
+  /* top: 93.5%; */
+  /* left: 865px; */
   filter: drop-shadow(2px 3px 4px #00000050);
   animation: bounce 2s infinite;
 }
@@ -499,10 +522,16 @@ nav ul li a:hover  {
   }
 }
 
-.service, .aboutus, .glimpse_of_portfolios {
+.service {
   align-items: center;
   text-align: center;
-  margin: 180px auto;
+  margin: 180px auto 300px;
+}
+
+.aboutus, .glimpse_of_portfolios {
+  align-items: center;
+  text-align: center;
+  margin: 300px auto;
 }
 
 .category {
@@ -684,7 +713,7 @@ nav ul li a:hover  {
   width: 160px;
   font-weight: 400;
   text-align: center;
-  background-color: #FCEE21;
+  background-color: #FFD800;
 }
 
 .btn_learn-more button:hover {
@@ -726,8 +755,18 @@ nav ul li a:hover  {
   margin-right: 10px;
 }
 
+.btn_view-more button:hover {
+  background-color: #FFD800;
+  transition: all .2s ease-in;
+}
+
 .btn_contact-us button {
   margin-left: 10px;
+}
+
+.btn_contact-us button:hover {
+  background-color: white;
+  transition: all .2s ease-in;
 }
 
 .portfolio_preview {
@@ -745,7 +784,7 @@ nav ul li a:hover  {
 .featured_portfolios {
   transition: 0.2s;
   cursor: pointer;
-  width: 590px;
+  width: 560px;
   height: 350px;
   background-color: pink;
   border-top-left-radius: 40px;
