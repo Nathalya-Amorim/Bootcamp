@@ -1,5 +1,5 @@
 # DASHING DIMES DESIGN
-![alt text](./assets/logo.svg)
+<img src="./assets/logo.svg" height="48" width="48" >
 
 ## DESCRIPTION
 
