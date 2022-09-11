@@ -1,8 +1,6 @@
 # Dashing Dimes Design
 
-This 
-
-## INSTALLATION
+Classmates, young and friends Aixin, Interpal, Nathalya and Seunghyeon built a profitable international design startup called - Dashing Dimes Design. They've decided to put together their talents and help people around Canada design logos and websites but they can also brand your business, create marketing materials for your brand and develop strategies that can attract clients.
 No need to install it.
 
 ========================================================================
