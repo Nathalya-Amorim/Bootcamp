@@ -267,7 +267,7 @@ Starts MOBILE
   }
 /* Ends Mobile Overlay Menu */
 
-@media screen and (min-width: 428px) and (max-width: 639px) {
+@media screen and (max-width: 639px) {
 
   #logo img {
     grid-column: 1/3;
