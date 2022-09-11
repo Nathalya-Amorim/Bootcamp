@@ -1,19 +1,36 @@
-# Dashing Dimes Design
+# DASHING DIMES DESIGN
+![alt text](./assets/logo.svg)
 
-Classmates, young and friends Aixin, Interpal, Nathalya and Seunghyeon built a profitable international design startup called - Dashing Dimes Design. They've decided to put together their talents and help people around Canada design logos and websites but they can also brand your business, create marketing materials for your brand and develop strategies that can attract clients.
-No need to install it.
+## DESCRIPTION
 
-========================================================================
+Our classmates, young and friends Aixin, Interpal, Nathalya and Seunghyeon built a profitable international design startup called - Dashing Dimes Design. We put together our talents and help people around Canada design logos and websites. Moreover, we brand clients' businesses, create marketing materials for brands and develop strategies that can attract clients.
 
-## USAGE
-You can use our project only for research and for ideas and inspiration.
+## GROUP 5 COLLABORATOR
+Seunghyeon Yeom, Nathalya Menezes, Aixin Zhong, Inderpal Singh Brar
 
-========================================================================
+## ROLE
+* Seunghyeon Yeom: Web Designer, Web Developer
+* Nathalya Menezes: Web Designer, Web Developer
+* Aixin Zhong: Videographer
+* Inderpal Singh Brar: Web Developer
 
-## CONTRIBUTING
-Fork it! Create your feature branch: git checkout -b my-new-feature Commit your changes: git commit -am 'Add some feature' Push to the branch: git push origin my-new-feature Submit a pull request.
+### CONTENT
+* Home: Greeting, Service, Team-Introduction, Portfolio Preview.
+* About/Team: Service, Team-Introduction.
+* Portfolio: Portfolio pieces, Portfolio Pop-up Page.
+* Contact: Contact Form.
 
-========================================================================
+### SIZES OF THE SCREENS
+* Mobile (Max-Width: 428px)
+* Tablet (Min-Width: 639px, Max-Width: 1023px)
+* Pc (Min-Width: 1024px, Max-Width: 1920px)
+
+### BRAND COLOURS
+* Dark Blue (#1c3176)
+* Yellow (#ffd800)
+
+### BRAND TYPOGRAPHY
+* Logo: Signatype (https://befonts.com/signatype-font.html), Billiondreams(https://www.cufonfonts.com/font/billion-dreams)
 
 ## MIT License
 Copyright 2022 Aixin Zhong, Inderpal Singh Brar, Nathálya Menezes and Seunghyeon Yeom
